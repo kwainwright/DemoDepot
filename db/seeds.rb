@@ -8,38 +8,45 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create!(title: 'CoffeeScript',
+Product.create!(title: 'Google Cardboard',
   description: 
     %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
+        Google Cardboard provides a cost effective approach to getting 
+        interested and exploring the world of virtual reality.  Use your 
+        iPhone or Android phone with the Google Cardboard headset to 
+        enter the VR world.
       </p>},
-  image_url:   'cs.jpg',    
-  price: 36.00)
+  image_url:   'Black Google Cardboard.jpg',    
+  price: 9.99)
 # . . .
-Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+Product.create!(title: 'Samsung Gear VR',
   description:
     %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
-        out there. If you need to get working programs delivered fast,
-        you should add Ruby to your toolbox.
+        Samsung Gear VR turns your Android phone into a virtual reality
+        enabled device.  This product provided a fully encapsulated container
+        for your device, decreasing any viewing clarity issues and increasing
+        motion tracking capabilities. Provided to you by Samsung & Oculus.   
       </p>},
-  image_url: 'ruby.jpg',
-  price: 49.95)
+  image_url: 'Samsung Gear VR.jpg',
+  price: 99.00)
 # . . .
-
-Product.create!(title: 'Rails Test Prescriptions',
+Product.create!(title: 'Daisen-tech VR Box',
   description: 
     %{<p>
-        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
-        Rails applications, covering Test-Driven Development from both a
-        theoretical perspective (why to test) and from a practical perspective
-        (how to test effectively). It covers the core Rails testing tools and
-        procedures for Rails 2 and Rails 3, and introduces popular add-ons,
-        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
+        A cheaper alternative to the Samsung Gear VR headset, the VR box provides 
+        the some of the same features, but enables the use of both android and apple
+        products within the headset.  
       </p>},
-  image_url: 'rtp.jpg',
-  price: 34.95)
+  image_url: 'Daisen VR Box.jpg',
+  price: 18.99)
+# . . .
+Product.create!(title: 'Oculus Rift',
+  description: 
+    %{<p>
+        The pinacle of home use Virtual Reality.  The Oculus Rift is the premium 
+        option for the VR experience. Top of the line head tracking, resolution and 
+        sound to video blending.  Designed for prolonged use in the gaming environment
+        by reducing motion sickness affects.  
+      </p>},
+  image_url: 'Oculus Rift.jpg',
+  price: 599.00)
