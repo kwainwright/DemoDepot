@@ -16,7 +16,7 @@ Product.create!(title: 'Google Cardboard',
         iPhone or Android phone with the Google Cardboard headset to 
         enter the VR world.
       </p>},
-  image_url:   'Black Google Cardboard.jpg',    
+  image_url:   'BlackGoogleCardboard.jpg',    
   price: 9.99)
 # . . .
 Product.create!(title: 'Samsung Gear VR',
@@ -27,7 +27,7 @@ Product.create!(title: 'Samsung Gear VR',
         for your device, decreasing any viewing clarity issues and increasing
         motion tracking capabilities. Provided to you by Samsung & Oculus.   
       </p>},
-  image_url: 'Samsung Gear VR.jpg',
+  image_url: 'SamsungGearVR.jpg',
   price: 99.00)
 # . . .
 Product.create!(title: 'Daisen-tech VR Box',
@@ -37,7 +37,7 @@ Product.create!(title: 'Daisen-tech VR Box',
         the some of the same features, but enables the use of both android and apple
         products within the headset.  
       </p>},
-  image_url: 'Daisen VR Box.jpg',
+  image_url: 'DaisenVRBox.jpg',
   price: 18.99)
 # . . .
 Product.create!(title: 'Oculus Rift',
@@ -48,5 +48,5 @@ Product.create!(title: 'Oculus Rift',
         sound to video blending.  Designed for prolonged use in the gaming environment
         by reducing motion sickness affects.  
       </p>},
-  image_url: 'Oculus Rift.jpg',
+  image_url: 'OculusRift.jpg',
   price: 599.00)
