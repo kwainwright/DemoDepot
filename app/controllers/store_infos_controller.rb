@@ -24,7 +24,7 @@ class StoreInfosController < ApplicationController
   # POST /store_infos
   # POST /store_infos.json
   def create
-    @store_info = StoreInfo.new(store_info)
+    @store_info = StoreInfo.new(store_info_params)
 
     respond_to do |format|
       if @store_info.save

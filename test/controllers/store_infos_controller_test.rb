@@ -18,7 +18,7 @@ class StoreInfosControllerTest < ActionController::TestCase
 
   test "should create store_info" do
     assert_difference('StoreInfo.count') do
-      post :create, store_info: store_infos(:ruby).id
+      post :create, id: @store_info, store_info: { about: store_infos(:ruby).about, city: store_infos(:ruby).city, email: store_infos(:ruby).email, fax_number: store_infos(:ruby).fax_number, phone_number: store_infos(:ruby).phone_number, state: store_infos(:ruby).state, street: store_infos(:ruby).street, street_number: store_infos(:ruby).street_number, terms: store_infos(:ruby).terms, zipcode: store_infos(:ruby).zipcode, privacy: store_infos(:ruby).privacy }
     end
 
     assert_redirected_to store_info_path(assigns(:store_info))
@@ -35,7 +35,7 @@ class StoreInfosControllerTest < ActionController::TestCase
   end
 
   test "should update store_info" do
-    patch :update, id: @store_info, store_info: { about: @store_info.about, city: @store_info.city, email: @store_info.email, fax_number: @store_info.fax_number, phone_number: @store_info.phone_number, state: @store_info.state, street: @store_info.street, street_number: @store_info.street_number, terms: @store_info.terms, zipcode: @store_info.zipcode }
+    patch :update, id: @store_info, store_info: { about: store_infos(:ruby_update).about, city: store_infos(:ruby_update).city, email: store_infos(:ruby_update).email, fax_number: store_infos(:ruby_update).fax_number, phone_number: store_infos(:ruby_update).phone_number, state: store_infos(:ruby_update).state, street: store_infos(:ruby_update).street, street_number: store_infos(:ruby_update).street_number, terms: store_infos(:ruby_update).terms, zipcode: store_infos(:ruby_update).zipcode, privacy: store_infos(:ruby_update).privacy }
     assert_redirected_to store_info_path(assigns(:store_info))
   end
 

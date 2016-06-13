@@ -36,3 +36,16 @@ ruby:
   phone_number: 1-888-888-8888
   fax_number: 1-888-555-5555
   email: someone@email.com
+  
+ruby_update:
+  about: Something updated about me
+  terms: Some updated general terms
+  privacy: Some updated general privacy
+  street: Street Name
+  street_number: 1234567
+  city: Somewhere
+  state: New York
+  zipcode: 56798
+  phone_number: 1-888-888-1111
+  fax_number: 1-888-555-7777
+  email: noone@email.com
