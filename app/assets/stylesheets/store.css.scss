@@ -6,9 +6,9 @@
   h1 {
     margin: 0;
     padding-bottom: 0.5em;
-    font:  150% sans-serif;
+    font:  200% sans-serif;
     color: #226;
-    border-bottom: 3px dotted #77d;
+    border-bottom: 3px dashed #000000;
   }
 
   /* An entry in the store catalog */
@@ -34,6 +34,12 @@
       color: #227;
     }
 
+    .description {
+      margin-left: 100px;
+      margin-top: 0.5em; 
+      margin-bottom: 0.8em; 
+    }
+
     p, div.price_line {
       margin-left: 100px;
       margin-top: 0.5em; 
@@ -45,11 +51,20 @@
       font-weight: bold;
       margin-right: 3em;
     }
+ 
+  }
+  
+  .about, .terms, .privacy, .contact {
+      margin-left: 0px;
+      margin-right: 10px;
+      margin-bottom: 0.8em; 
+      font-size: 120%;
+      font-family: sans-serif;
   }
 }
 
 p, div.price_line {
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top: 0.5em;
   margin-bottom: 0.8em;
   

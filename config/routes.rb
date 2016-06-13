@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'store/about'
+
+  get 'store/privacy'
+
+  get 'store/terms'
+
+  get 'store/contact'
+
+  resources :store_infos
   resources :line_items
   resources :carts
   get 'store/index'

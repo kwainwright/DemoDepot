@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>About:</strong>
+  <%= @store_info.about %>
+</p>
+
+<p>
+  <strong>Terms:</strong>
+  <%= @store_info.terms %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @store_info.street %>
+</p>
+
+<p>
+  <strong>Street number:</strong>
+  <%= @store_info.street_number %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @store_info.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @store_info.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @store_info.zipcode %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @store_info.phone_number %>
+</p>
+
+<p>
+  <strong>Fax number:</strong>
+  <%= @store_info.fax_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @store_info.email %>
+</p>
+
+<p>
+  <strong>Privacy:</strong>
+  <%= @store_info.privacy %>
+</p>
+
+<%= link_to 'Edit', edit_store_info_path(@store_info) %> |
+<%= link_to 'Back', store_infos_path %>

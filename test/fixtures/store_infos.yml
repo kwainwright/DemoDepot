@@ -1,0 +1,38 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  about: MyText
+  terms: MyText
+  street: MyString
+  street_number: 9.99
+  city: MyString
+  state: MyString
+  zipcode: 9.99
+  phone_number: 9.99
+  fax_number: 9.99
+  email: MyString
+
+two:
+  about: MyText
+  terms: MyText
+  street: MyString
+  street_number: 9.99
+  city: MyString
+  state: MyString
+  zipcode: 9.99
+  phone_number: 9.99
+  fax_number: 9.99
+  email: MyString
+  
+ruby:
+  about: Something about me
+  terms: Some general terms
+  privacy: Some general privacy
+  street: Street Name
+  street_number: 12345
+  city: Anywhere
+  state: New Jersey
+  zipcode: 08627
+  phone_number: 1-888-888-8888
+  fax_number: 1-888-555-5555
+  email: someone@email.com
