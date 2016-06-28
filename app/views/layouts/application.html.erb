@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VR Outpost Online Store</title>
+  <title><%= t('.html_title') %></title>
   <%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,7 +11,7 @@
 <body class="<%= controller.controller_name %>">
   <div id="banner">
     <%= image_tag("vrlogo.png") %>
-    <%= @page_title || "VR Outpost" %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns">
     <div id="side">
@@ -24,22 +24,22 @@
       </div>
       
       <ul>
-        <li><%= link_to 'Home', store_path %></li>
-        <li><%= link_to 'About', store_about_path %></li>
-        <li><%= link_to 'Terms', store_terms_path %></li>
-        <li><%= link_to 'Privacy', store_privacy_path %></li>
-        <li><%= link_to 'Contact', store_contact_path %></li>
+        <li><%= link_to t('.home'), store_path %></li>
+        <li><%= link_to t('.about'), store_about_path %></li>
+        <li><%= link_to t('.terms'), store_terms_path %></li>
+        <li><%= link_to t('.privacy'), store_privacy_path %></li>
+        <li><%= link_to t('.contact'), store_contact_path %></li>
       </ul>
       
       <% if nil == session[:user_id] %>
-      	<%= button_to 'Login', login_path, method: :get %>
+      	<%= button_to t('.login'), login_path, method: :get %>
       <% else %>
       	<ul>
-      		<li><%= link_to 'Orders', orders_path %></li>
-      		<li><%= link_to 'Products', products_path %></li>
-      		<li><%= link_to 'Users', users_path %></li>
+      		<li><%= link_to t('.orders'), orders_path %></li>
+      		<li><%= link_to t('.products'), products_path %></li>
+      		<li><%= link_to t('.users'), users_path %></li>
       	</ul>	
-      	<%= button_to 'Logout', logout_path, method: :delete %>
+      	<%= button_to t('.logout'), logout_path, method: :delete %>
       <% end %>
       
     </div>

@@ -19,24 +19,24 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
   
   layouts:
       application:
-        title_html: "VR Outpost Online Store"
-        title:  "VR Outpost"
-        home: "Home"
-        about: "About"
-        terms: "Terms"
-        privacy: "Privacy"
-        contact: "Contact"
-        login: "Login"
-        logout: "Logout"
-        orders: "Orders"
-        products: "Products"
-        users: "Users"
-        
+        title_html: "Tienda en Línea Avanzada VR"
+        title:  "Avanzada VR"
+        home: "Inicio"
+        about: "Acerca de"
+        terms: "Condiciones"
+        privacy: "Intimidad"
+        contact: "Contacto"
+        login: "Iniciar Sesi&otilde;n"
+        logout: "Cerrar Sesi&otilde;n"
+        orders: "Pedidos"
+        products: "Productos"
+        users: "Usuarios"
+
   store:
       index:
-        title_html: "VR Gear Catalog"
-        add_html: "Add to Cart"
+        title_html: "VR Engranaje Catálogo"
+        add_html: "A&ntilde;adir al Carrito"
