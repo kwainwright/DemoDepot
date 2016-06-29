@@ -30,8 +30,8 @@ en:
         terms: "Terms"
         privacy: "Privacy"
         contact: "Contact"
-        login: "Login"
-        logout: "Logout"
+        login_html: "Admin Login"
+        logout_html: "Logout"
         orders: "Orders"
         products: "Products"
         users: "Users"
@@ -40,6 +40,14 @@ en:
       index:
         title_html: "VR Gear Catalog"
         add_html: "Add to Cart"
+      about:
+        title_html: "About Us"
+      terms:
+        title_html: "Terms of Use"
+      privacy:
+        title_html: "Privacy Terms"
+      contact:
+        title_html: "Contact Information"
         
   carts:
       cart:
@@ -55,3 +63,28 @@ en:
           seperator: "."
           delimiter: ","
           format:  "%u%n"
+          
+  orders:
+      new:
+        legend:     "Please Enter Your Details"
+      form:
+        name: "Name"
+        address_html: "Address"
+        email: "E-mail"
+        pay_type: "Pay with"
+        pay_prompt_html: "Select a payment method"
+        submit: "Place Order"
+        
+  errors:
+        template:
+            body: "There are problems with the following fields"
+            header:
+                one:  "1 error prohibited this %{model} from being saved"
+                other: "%{count} errors prohibited this %{model} from being saved"      
+        
+  thanks: "Thank you for your order"
+        
+        
+        
+
+

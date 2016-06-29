@@ -7,31 +7,25 @@ Rails.application.routes.draw do
   end
   
   resources :users
+  resources :store_infos
   
   get 'users/new'
-  
   get 'store/about'
-
   get 'store/privacy'
-
   get 'store/terms'
-
   get 'store/contact'
 
+  resources :products do 
+    get :who_bought, on: :member
+  end
+  
   scope '(:locale)' do
     resources :orders
-    resources :store_infos
     resources :line_items
     resources :carts
     root 'store#index', as: 'store', via: :all
   end
   
-  get 'store/index'
-  resources :products do 
-    get :who_bought, on:  :member
-  end
-
-  resources :products
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
