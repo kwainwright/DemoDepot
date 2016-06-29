@@ -40,3 +40,18 @@ en:
       index:
         title_html: "VR Gear Catalog"
         add_html: "Add to Cart"
+        
+  carts:
+      cart:
+        title: "Your Cart"
+        empty: "Empty cart"
+        checkout: "Checkout"
+
+  number:
+      currency:
+        format:
+          unit:    "$"
+          precision: 2
+          seperator: "."
+          delimiter: ","
+          format:  "%u%n"
