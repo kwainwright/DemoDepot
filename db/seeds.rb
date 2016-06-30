@@ -100,3 +100,8 @@ StoreInfo.create!(
         we can guarantee that it won't be stolen by someone or sold by us...because we 
         need the money to sell more VR Gear.  Good Luck and Happy Shopping!
     })
+# . . .
+User.delete_all
+User.create!(
+  name: 'Kevin',
+  password_digest: BCrypt::Password.create('Kevin'))
